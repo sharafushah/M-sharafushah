@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>വിശാദം - മലയാളി പ്രസാധനം</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Malayalam:wght@400;700&display=swap');
+    body {
+      font-family: 'Noto Serif Malayalam', serif;
+      scroll-behavior: smooth;
+    }
+    .bg-books {
+      background-image: url('https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+    .hover-scale:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-[#2c3e50] text-white p-4 sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">വിശാദം</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#home" class="hover:text-[#3498db] transition">മുഖ്യപേജ്</a></li>
+        <li><a href="#about" class="hover:text-[#3498db] transition">ഞങ്ങളെക്കുറിച്ച്</a></li>
+        <li><a href="#contact" class="hover:text-[#3498db] transition">ബന്ധപ്പെടുക</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-books h-screen flex items-center justify-center text-white">
+    <div class="text-center bg-black bg-opacity-50 p-10 rounded-lg">
+      <h2 class="text-5xl font-bold mb-4 animate-title">വിശാദം</h2>
+      <p class="text-xl mb-6">മലയാള സാഹിത്യത്തിന്റെ ഹൃദയം</p>
+      <a href="#contact" class="bg-[#3498db] text-white px-6 py-3 rounded-full hover:bg-[#2980b9] hover-scale">ഞങ്ങളെ ബന്ധപ്പെടുക</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-10">ഞങ്ങളെക്കുറിച്ച്</h2>
+      <p class="text-lg text-center max-w-3xl mx-auto">
+        പ്രഭാതം മലയാള സാഹിത്യത്തിന്റെ സമ്പന്നമായ പൈതൃകം ഉയർത്തിപ്പിടിക്കുന്ന ഒരു പ്രസാധന സ്ഥാപനമാണ്. ഞങ്ങളുടെ പുസ്തകങ്ങൾ വായനക്കാരെ പ്രചോദിപ്പിക്കുകയും അറിവ് പകർന്നുനൽകുകയും ചെയ്യുന്നു.
+      </p>
+    </div>
+  </section>
+
+  <!-- Articles Section -->
+  <section id="articles" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-10">ലേഖനങ്ങൾ</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
+          <h3 class="text-2xl font-bold mb-4">ലേഖനം 1</h3>
+          <p class="text-gray-700">വഖ്ഫ് ബില്ല് :യാഥാർഥ്യമെന്ത് ?.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
+          <h3 class="text-2xl font-bold mb-4">ലേഖനം 2</h3>
+          <p class="text-gray-700">സമൂഹം എങ്ങോട്ട് ?.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
+          <h3 class="text-2xl font-bold mb-4">ലേഖനം 3</h3>
+          <p class="text-gray-700">മതം നൽകുന്ന മാറ്റം.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stories Section -->
+  <section id="stories" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-10">കഥകൾ</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover-scale">
+          <h3 class="text-2xl font-bold mb-4">കഥ 1</h3>
+          <p class="text-gray-700">ഓലിയില്ലാത്ത ശവ്വാലമ്പിളി .</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover-scale">
+          <h3 class="text-2xl font-bold mb-4">കഥ 2</h3>
+          <p class="text-gray-700">എന്റെ ഓർമ്മക്കുറിപ്പ്  .</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YouTube Videos Section -->
+  <section id="videos" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-10">യൂട്യൂബ് വീഡിയോകൾ</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="hover-scale">
+          <iframe class="w-full h-64 rounded-lg shadow-lg" 
+                  src="https://www.youtube.com/embed/VT1zdtT2yoc" 
+                  title="YouTube Shorts Video" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+          </iframe>
+        </div>
+        <div class="hover-scale">
+          <iframe class="w-full h-64 rounded-lg shadow-lg" 
+                  src="https://www.youtube.com/embed/UwRlCLLy1m4" 
+                  title="YouTube Video 1
+                  " 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+          </iframe>
+        </div>
+        <div class="hover-scale">
+          <iframe class="w-full h-64 rounded-lg shadow-lg" 
+                  src="" 
+                  title="YouTube Video 3" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-10">Contact</h2>
+      <p class="text-lg mb-6">ഞങ്ങളുമായി ബന്ധപ്പെടാൻ താഴെ നൽകിയിരിക്കുന്ന വിവരങ്ങൾ ഉപയോഗിക്കുക:</p>
+      <div class="flex justify-center space-x-6">
+        <a href="https://instagram.com/sharafu_x10" target="_blank" class="hover-scale">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="w-12 h-12">
+        </a>
+        <a href="mailto:sharafushah21@gmail.com" class="hover-scale">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Gmail" class="w-12 h-12">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#2c3e50] text-white p-4 text-center">
+    <p>&copy; 2025 വിശാദം. എല്ലാ അവകാശങ്ങളും നിക്ഷിപ്തം.</p>
+  </footer>
+
+  <script>
+    // GSAP Animations
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Hero title animation
+    gsap.from(".animate-title", {
+      opacity: 0,
+      y: 50,
+      duration: 1.5,
+      ease: "power3.out"
+    });
+
+    // Section animations
+    gsap.utils.toArray("section").forEach((section) => {
+      gsap.from(section, {
+        opacity: 10,
+        y: 100,
+        duration: 1,
+        scrollTrigger: {
+          trigger: section,
+          start: "top 80%",
+          toggleActions: "play none none reset"
+        }
+      });
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // GSAP Animations for new sections
+    gsap.utils.toArray("#articles, #stories, #videos").forEach((section) => {
+      gsap.from(section, {
+        opacity: 0,
+        y: 100,
+        duration: 1,
+        scrollTrigger: {
+          trigger: section,
+          start: "top 80%",
+          toggleActions: "play none none reset"
+        }
+      });
+    });
+
+    // Chatbot functionality
+    const messagesContainer = document.getElementById('chatbot-messages');
+    const inputField = document.getElementById('chatbot-input');
+    const sendButton = document.getElementById('chatbot-send');
+
+    sendButton.addEventListener('click', () => {
+      const userMessage = inputField.value.trim();
+      if (userMessage) {
+        // Display user message
+        const userMessageDiv = document.createElement('div');
+        userMessageDiv.className = 'text-right text-gray-800 mb-2';
+        userMessageDiv.textContent = userMessage;
+        messagesContainer.appendChild(userMessageDiv);
+
+        // Clear input field
+        inputField.value = '';
+
+        // Send message to backend API (replace 'your-backend-api-url' with your actual API endpoint)
+        fetch('your-backend-api-url', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: userMessage })
+        })
+          .then(response => response.json())
+          .then(data => {
+            // Display bot response
+            const botMessageDiv = document.createElement('div');
+            botMessageDiv.className = 'text-left text-gray-700 mb-2';
+            botMessageDiv.textContent = data.reply; // Assuming the API returns a 'reply' field
+            messagesContainer.appendChild(botMessageDiv);
+
+            // Scroll to the bottom
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+          })
+          .catch(error => {
+            console.error('Error:', error);
+            const errorMessageDiv = document.createElement('div');
+            errorMessageDiv.className = 'text-left text-red-500 mb-2';
+            errorMessageDiv.textContent = 'ക്ഷമിക്കണം, ഒരു പിശക് സംഭവിച്ചു.';
+            messagesContainer.appendChild(errorMessageDiv);
+          });
+      }
+    });
+  </script>
+</body>
+</html>
+<script src='https://cdn.jotfor.ms/s/umd/latest/for-embedded-agent.js'></script>
+<script>
+  window.addEventListener("DOMContentLoaded", function() {
+    window.AgentInitializer.init({
+      agentRenderURL: "https://agent.jotform.com/01967c32e77571a5b63eb4edd249bf88687d",
+      rootId: "JotformAgent-01967c32e77571a5b63eb4edd249bf88687d",
+      formID: "01967c32e77571a5b63eb4edd249bf88687d",
+      queryParams: ["skipWelcome=1", "maximizable=1"],
+      domain: "https://www.jotform.com",
+      isDraggable: false,
+      background: "linear-gradient(180deg, #D3CBF4 0%, #D3CBF4 100%)",
+      buttonBackgroundColor: "#000000",
+      buttonIconColor: "#000000",
+      variant: false,
+      customizations: {
+        "greeting": "Yes",
+        "greetingMessage": "გამარჯობა! როგორ შეიძლება დაგეხმაროთ?",
+        "openByDefault": "No",
+        "pulse": "Yes",
+        "position": "right",
+        "autoOpenChatIn": "0"
+      },
+      isVoice: false,
+    });
+  });
+</script>
